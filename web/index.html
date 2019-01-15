@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="scaffolded-by" content="https://github.com/google/stagehand">
+    <title>uat_app_dart</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+    <script defer src="main.dart.js"></script>
+</head>
+
+<body>
+
+  <div id="add-form" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <form action="">
+              Step number: <label><input type="number" name="StepNumber" value=""></label><br>
+              Step description: <label><input type="text" name="StepDesc"></label><br>
+              Expected result: <label><input type="text" name="ExpectedResult"></label><br>
+              <input type="submit" value="Submit">
+          </form>
+      </div>
+  </div>
+  <div>
+      <button id="add-btn" type="button">Add</button>
+      <table class="border">
+          <tr class="table-header">
+              <th>Step ID</th>
+              <th>Step #</th>
+              <th>Description</th>
+              <th>Expected Result</th>
+              <th>Actual Result</th>
+              <th>Pass/Fail</th>
+              <th>Notes</th>
+          </tr>
+          <tr class="table-data">
+              <td id="#table-data-step-id">Nothing Yet</td>
+              <td id="#table-data-step-num">Nothing Yet</td>
+              <td id="#table-data-step-desc">Nothing Yet</td>
+              <td id="#table-data-step-expected-result">Nothing Yet</td>
+              <td id="table-data-step-id-actual-result">Nothing Yet</td>
+              <td id="table-data-step-id-pass-fail">Nothing Yet</td>
+              <td id="table-data-step-id-notes">Nothing Yet</td>
+          </tr>
+      </table>
+  </div>
+
+</body>
+</html>
